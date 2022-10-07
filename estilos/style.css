@@ -60,4 +60,12 @@ section#login > div#formulario {
 
     display: block;
 }
- 
+
+div#formulario h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+div#formulario p {
+    font-size: .8em;
+}
