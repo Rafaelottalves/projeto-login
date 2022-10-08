@@ -2,6 +2,8 @@
 
 :root { /* Paleta de Cores */
     --verde: #49a09d;
+    --verde-claro: #6cd3cf;
+    --verde-escuro: #2d6462;
     --roxo: #5f2c82; 
 }
 
@@ -28,7 +30,7 @@ main {
 
 section#login {
     width: 250px;
-    height: 500px;
+    height: 515px;
     
     position: absolute;
     top: 50%;
@@ -67,5 +69,69 @@ div#formulario h1 {
 }
 
 div#formulario p {
+    font-size: .8em;
+}
+
+form > div.campo {
+    width: 100%;
+    height: 40px;
+
+    margin: 5px 0px;
+
+    display: block;
+    border-radius: 5px;
+
+    background-color: var(--roxo);
+}
+
+div.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    width: 100%;
+    height: 40px;
+
+    display: block;
+
+    font-size: 1em;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    background-color: var(--verde);
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--verde-escuro);
+}
+
+form > a.botao {
+    width: 100%;
+    height: 40px;
+
+    padding-top: 7px;
+    margin-top: 5px;
+
+    display: block;
+
+    border: 1px solid var(--verde);
+    border-radius: 5px;
+    
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+
+    color: var(--verde-escuro);
+    background-color: white;
+}
+
+form > a.botao:hover {
+    background-color: var(--verde-claro);
+}
+
+form > a.botao > i {
     font-size: .8em;
 }
